@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Farrell Jonathan</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="shortcut icon" href="img/download.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body >
+    <!-- Navbar Start-->
+     <header class="bg-primary fixed top-0 left-0 w-full z-10 dark:bg-dark" id="header">
+        <nav class="container relative h-14 flex justify-between items-center z-10">
+            <div>
+                <a href="#" class="text-2xl uppercase font-bold font-poppins">
+                    Farrell <span class="text-secondary">Jonathan</span>
+                </a>
+            </div>
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-primary border-b dark:bg-dark border-secondary md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto" id="navbar-menu">
+                <ul class="flex flex-col text-center gap-5 md:flex-row">
+                    <li>
+                        <a class="nav__link hover:text-secondary ease-in duration-200 text-secondary" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hover:text-secondary ease-in duration-200 " href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hover:text-secondary ease-in duration-200" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hover:text-secondary ease-in duration-200" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hover:text-secondary ease-in duration-200" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden"  id="close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl" id="theme"></i>
+                <div class="md:hidden" id="burger">
+                    <i class="ri-menu-line cursor-pointer text-xl"></i>
+                </div>
+            </div>
+        </nav>
+     </header>
+    <!-- Navbar End  -->
+
+     <main>
+        <!-- Hero Start -->
+        <section id="home" class="h-screen flex items-center">
+          <div class="container flex flex-col items-center gap-10 md:flex-row h-full min-h-screen">
+              <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY z-0">
+                  <img class="w-60 md:w-full z-0 home__image" src="img/he.jpg" alt="HeroImage">
+              </div>
+              <div class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                  <h1 class="hero__title">Halo 👋</h1>
+                  <div class="garis mx-auto md:mx-0 lg:hover:w-96 "></div>
+                  <p class="text-paragraph text-lg leading-5 ">
+                      perkenalkan nama saya adalah <span class="font-bold">Farrell Jonathan</span>
+                  </p>
+                  <a href="#contact" class="btn btn-primary">Contact me</a>
+              </div>
+          </div>
+      </section>
+      
+        <!-- Hero End   -->
+
+        <!-- about start-->
+        <section id="about">
+            <div class="about container mx-auto px-6 text-center">
+              <h2 class="text-5xl font-bold mb-4">About Me</h2>
+              <p class="text-lg text-paragraph max-w-2xl mx-auto mb-8">
+                Halo, saya <span class="font-bold">Farrell Jonathan</span>, mahasiswa jurusan Computer Science di angkatan B26 dengan NIM 2602097233. Saya memiliki ketertarikan besar dalam teknologi dan pengembangan software. Saya selalu bersemangat untuk belajar hal baru dan mengasah keterampilan saya di dunia pemrograman dan teknologi.
+              </p>
+              <p class="text-lg text-paragraph max-w-2xl mx-auto">
+                Dengan semangat tinggi untuk terus berkembang, saya selalu mencari kesempatan baru untuk mengeksplorasi dunia teknologi. Saya percaya bahwa dengan kemauan belajar yang kuat, kita bisa mencapai hal-hal yang luar biasa.
+              </p>
+            </div>
+          </section>
+        <!-- about end -->
+
+        <!-- projects start -->
+        <section id="projects">
+            <div class="projects__card container mx-auto px-6">
+              <h2 class="text-5xl font-bold text-white text-center mb-12">Projects</h2>
+              <!-- Project 1 -->
+              <div class="flex flex-col md:flex-row items-center mb-12">
+                <div class="w-full md:w-1/2 order-1">
+                  <img src="img/projects1.jpg" alt="Project 1" class="w-full h-auto rounded-lg shadow-lg hover:scale-125 hover:rotate-[-12deg] transition-all duration-500">
+                </div>
+                <div class="w-full md:w-1/2 md:pl-10 order-2">
+                  <h3 class="text-2xl font-bold text-white mb-4">Study Buddy Finder</h3>
+                  <p class="text-lg text-paragraphColor mb-4">
+                    Aplikasi ini membantu pengguna menentukan tempat belajar, menemukan teman di sekitar, dan merencanakan sesi belajar melalui fitur chat. Dengan langkah sederhana, pengguna dapat mengatur lokasi, mencari teman, dan mengirim permintaan, sehingga kolaborasi belajar menjadi lebih efisien.
+                  </p>
+                  <a href="https://github.com/pepis2317/SE-KEL-12" class="text-secondary font-medium hover:underline">Lihat Detail Proyek</a>
+                </div>
+              </div>
+          
+              <!-- Project 2 -->
+              <div class="projects__card flex flex-col md:flex-row items-center mb-12">
+                <div class="w-full md:w-1/2 order-3 md:order-1">
+                  <h3 class="text-2xl font-bold text-white mb-4">Kalkulator Sederhana berbasis android</h3>
+                  <p class="text-lg text-paragraphColor mb-4">
+                    Aplikasi Kalkulator Sederhana adalah aplikasi Android yang dikembangkan menggunakan bahasa Java. Menyediakan fungsi dasar seperti penjumlahan, pengurangan, perkalian, dan pembagian, aplikasi ini menawarkan antarmuka yang intuitif dan responsif, memungkinkan pengguna melakukan perhitungan dengan mudah dan efisien untuk kebutuhan sehari-hari.
+                  </p>
+                  <a href="https://binusianorg-my.sharepoint.com/personal/farrell_jonathan_binus_ac_id/_layouts/15/guestaccess.aspx?share=EdFVaJ91rzRJuYSm0QuK9A8BcGKx-o68W7WFzs8W2deWIQ&e=kOoz0J" class="text-secondary font-medium hover:underline">Lihat Detail Proyek</a>
+                </div>
+                <div class="w-full md:w-1/2 mb-6 md:mb-0 order-2 md:order-3">
+                  <img src="img/project2.jpg" alt="Project 2" class="w-full h-auto rounded-lg shadow-lg hover:scale-125 hover:rotate-[12deg] transition-all duration-500">
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- projects end -->
+
+        <!-- Skills start -->
+        <section id="skills" class="mt-12">
+            <div class="container mx-auto px-6 skill">
+              <h2 class="text-5xl font-bold text-white text-center mb-6">Skills</h2>
+              <div class="flex overflow-hidden space-x-16 group">
+                <div class="flex space-x-16 animate-loop-scroll group-hover:paused">
+                    <div >
+                      <img loading="lazy" src="img/java.png" alt="Java" class="max-w-none">
+                    </div>
+                    <div >
+                      <img loading="lazy" src="img/c.png" alt="C" class="max-w-none"> 
+                    </div>
+                    <div >
+                      <img loading="lazy" src="img/tailwind.png" alt="Tailwind CSS" class="max-w-none">
+                    </div>
+                    <div >
+                      <img loading="lazy" src="img/html.png" alt="HTML" class="max-w-none">
+                    </div>
+                    <div >
+                      <img loading="lazy" src="img/css.png" alt="CSS" class="max-w-none">
+                    </div>
+                    <div >
+                      <img loading="lazy" src="img/php.png" alt="PHP" class="max-w-none">
+                    </div>
+                    <div >
+                      <img loading="lazy" src="img/mysql.png" alt="MySQL" class="max-w-none">
+                    </div>
+                    <div >
+                      <img loading="lazy" src="img/js.jpg" alt="JavaScript" class="max-w-none">
+                    </div>
+                </div>
+                <div class="flex space-x-16 animate-loop-scroll aria-hidden:true group-hover:paused">
+                        <div >
+                          <img loading="lazy" src="img/java.png" alt="Java" class="max-w-none">
+                        </div>
+                        <div >
+                          <img loading="lazy" src="img/c.png" alt="C" class="max-w-none">
+                        </div>
+                        <div >
+                          <img loading="lazy" src="img/tailwind.png" alt="Tailwind CSS" class="max-w-none">
+                        </div>
+                        <div >
+                          <img loading="lazy" src="img/html.png" alt="HTML" class="max-w-none">
+                        </div>
+                        <div >
+                          <img loading="lazy" src="img/css.png" alt="CSS" class="max-w-none">
+                        </div>
+                        <div >
+                          <img loading="lazy" src="img/php.png" alt="PHP" class="max-w-none">
+                    
+                        </div>
+                        <div >
+                          <img loading="lazy" src="img/mysql.png" alt="MySQL" class="max-w-none">
+                
+                        </div>
+                        <div >
+                          <img loading="lazy" src="img/js.jpg" alt="JavaScript" class="max-w-none">
+                        </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <!-- skills end -->
+
+        <!-- contact start -->
+        <section id="contact">
+          <div class="p-5 xsm:p-10 contact">
+            <div class="text-center space-y-3 mb-10">
+              <h2 class="font-bold text-5xl">Contact Me</h2>
+            </div>
+          <div class="lg:flex   lg:justify-center">
+            <div class=" w-[100%] lg:w-fit ">
+              <img class=" lg:h-[70vh] " src="img/aa.jpg" alt="image">
+            </div>
+          <div class="space-y-5 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-3 lg:max-w-[600px]">
+            <div class="bg-secondary text-black p-4 text-center space-y-3 lg:pt-10 ">
+              <h2 class="font-bold">CONTACT ME</h2>
+                <div class="icon space-x-2">
+                  <i class="fa-brands fa-instagram"></i> Farrelljonathan23
+                  <br>
+                  <i class="fa-brands fa-tiktok"></i> Farrell2805
+                </div>
+              </div>
+              <div class="bg-secondary text-black p-4 text-center space-y-3 lg:pt-10">
+                <div class="icon h-12 w-12 ring-4 text-3xl ring-[white] pt-1 rounded-[50%] m-auto">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h2 class="font-bold">EMAIL</h2>
+                <div class="">
+                  <a href="">farrell.jonathan@binus.ac.id</a>
+                </div>
+              </div>
+              <div class="bg-secondary text-black p-4 text-center space-y-3 lg:pt-10">
+                  <div class="icon h-12 w-12 ring-4 text-3xl ring-[white] pt-1 rounded-[50%] m-auto">
+                      <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <h2 class="font-bold">ADDRESS</h2>
+                  <div class="">
+                      Pejagalan, Jakarta Barat
+                      <br>or<br>
+                      Taman Sutera Narada, Tanggerang Selatan
+                  </div>
+              </div>
+
+              <div class="bg-secondary text-black p-4 text-center space-y-3 lg:pt-10">
+                  <div class="icon h-12 w-12 ring-4 text-3xl ring-[white] pt-1 rounded-[50%] m-auto">
+                      <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <h2 class="font-bold">Whatsapp</h2>
+                  <div class="">
+                      (+62)-812-9504-7587
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+        </section>
+        <!-- contact end -->
+    </main>
+
+    <a href="#" class="fixed right-4 -bottom-1/2 bg-secondary shadow-sm inline-block px-4 py-2 rounded-full text-lg text-black z-50 hover:-translate-y-1 ease-in duration-300" id="scrollUp">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </body>
+</html>
